@@ -1,0 +1,55 @@
+body{
+  background-color: black;
+}
+.side {
+    height: 300px;
+    width: 300px;
+}
+.background{
+    height: 300px;
+}
+.sidelist{
+    margin-top: 300px;
+    color: pink;
+
+    background-color: black;
+}
+#slide-out{
+        background-color: black;
+
+}
+li{
+    margin-bottom: 35px;
+}
+h1{
+    color:pink;
+    text-align: center;
+}
+.caption, i{
+    color: pink;
+}
+
+ul.slides{
+    height:500px !important;
+}
+h3{
+    color:pink;
+}
+.img2{
+    display: none;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+
+.img1{
+    display: none;
+}
+.img2{
+    display: block;
+}
+h3 {
+    margin-top: 250px;
+    color:#FC0DBB;
+}
+}
+
+
