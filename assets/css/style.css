@@ -1,55 +1,177 @@
-body{
-  background-color: black;
+body {
+    background-color: black;
 }
+
 .side {
     height: 300px;
     width: 300px;
 }
-.background{
+
+.background {
     height: 300px;
 }
-.sidelist{
+
+.sidelist {
     margin-top: 300px;
     color: pink;
 
-    background-color: black;
+    background-color: pink;
 }
-#slide-out{
-        background-color: black;
 
+#slide-out {
+    background-color: pink;
 }
-li{
+
+li {
     margin-bottom: 35px;
 }
-h1{
-    color:pink;
+
+h1 {
+    color: pink;
     text-align: center;
 }
-.caption, i{
+
+.caption,
+i {
     color: pink;
 }
 
-ul.slides{
-    height:500px !important;
+ul.slides {
+    height: 500px !important;
 }
-h3{
-    color:pink;
-}
-.img2{
-    display: none;
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
 
-.img1{
-    display: none;
-}
-.img2{
-    display: block;
-}
 h3 {
-    margin-top: 250px;
-    color:#FC0DBB;
+    color: pink;
 }
+
+.img2 {
+    display: none;
+}
+
+.item {
+    color: pink !important;
+}
+
+.servicevs {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
+.tapr {
+    text-align: right;
+}
+#drops{
+    margin-top: -70px;
+    margin-bottom: 100px;
+    margin-left: 270px;
+}
+.tapl {
+    text-align: left;
+}
+
+.resize {
+    height: 370px;
+    width: 370px;
+/*    border-radius: 50%;
+*/    float: right;
+}
+div.wrapper{
+    float:left; /* important */
+    position:relative; /* important(so we can absolutely position the description div */
+}
+div.description{
+    position:absolute; /* absolute position (so we can position it where we want)*/
+    bottom:0px; /* position will be on bottom */
+    left:0px;
+    width:100%;
+    /* styling bellow */
+    background-color:black;
+    color:white;
+    opacity:0.6; /* transparency */
+    filter:alpha(opacity=60); /* IE transparency */
+}
+p.description_content{
+    padding:10px;
+    margin:0px;
+    font-size: 30px;
+}
+.wrapper{
+    margin-top: 100px !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+
+/*html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background: #fff;
+  text-align: center;
+}*/
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 3em;
+  color: #9A12B3;
 }
 
 
+
+.letterDrop {
+  position: relative;
+  top: 0;  
+  display: inline-block;
+  text-transform: uppercase; 
+  letter-spacing: 0.5em;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  animation: letterDrop 1.2s ease 1 normal forwards;
+}
+
+@keyframes letterDrop {
+    10% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.8;
+        top: 3.75em;
+        transform: rotateX(-360deg);
+    }
+    100% {
+        opacity: 1;
+        top: 4.50em;
+        transform: rotateX(360deg);
+    }
+}
+
+
+span:nth-child(2n) {
+  color: #663399;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        display: block;
+    }
+    h3 {
+        margin-top: 250px;
+        color: #FC0DBB;
+    }
+    #drops{
+    margin-top: -70px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+}
+}
