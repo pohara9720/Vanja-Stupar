@@ -79,5 +79,6 @@ $.fn.letterDrop = function() {
 
 // USAGE
 $( 'h2' ).letterDrop();
+$('.summary').letterDrop();
 
  });
