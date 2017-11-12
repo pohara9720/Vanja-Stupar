@@ -21,6 +21,9 @@ body {
 #slide-out {
     background-color: pink;
 }
+.summary{
+    line-height: 25px;
+}
 
 li {
     margin-bottom: 35px;
